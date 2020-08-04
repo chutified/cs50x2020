@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gallery</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- custom css -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <!-- javascript -->
+        <script src="./switches.js"></script>
+    </head>
+    <body>
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a href="./index.html" class="nav-link">Homepage</a>
+            </li>
+            <li class="nav-item">
+                <a href="./about.html" class="nav-link">About me</a>
+            </li>
+            <li class="nav-item">
+                <a href="./projects.html" class="nav-link">My projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link active">Gallery</a>
+            </li>
+        </ul>
+
+        <div>
+            <h2 class="display-1 text-center">My RPi project</h2>
+
+            <!-- TODO switching between images with JS -->
+            <div id="btns">
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group mr-2 btn-group-lg" role="group" aria-label="First group">
+                        <button id="btn1" type="button" class="btn btn-secondary" onclick="switchImg(1)">1</button>
+                        <button id="btn2" type="button" class="btn btn-secondary" onclick="switchImg(2)">2</button>
+                        <button id="btn3" type="button" class="btn btn-secondary" onclick="switchImg(3)">3</button>
+                    </div>
+                    <div class="btn-group mr-2 btn-group-lg" role="group" aria-label="Second group">
+                        <button id="btn4" type="button" class="btn btn-secondary" onclick="switchImg(4)">4</button>
+                        <button id="btn5" type="button" class="btn btn-secondary" onclick="switchImg(5)">5</button>
+                        <button id="btn6" type="button" class="btn btn-secondary" onclick="switchImg(6)">6</button>
+                        <button id="btn7" type="button" class="btn btn-secondary" onclick="switchImg(7)">7</button>
+                    </div>
+                </div>
+            </div>
+
+            <img id="image" class="images mx-auto d-block" src="./imgs/1.jpg">
+        </div>
+    </body>
+</html>
