@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table class="table table-hover">
+        <thead class="thead-light">
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in stocks %}
+                <tr>
+                    <td>{{ stock["symbol"]|upper }}</td>
+                    <td>{{ stock["sum"] }}</td>
+                    <td>${{ stockPrices[stock["symbol"]]|round(2, 'floor') }}</td>
+                    <td>${{ stockPrices[stock["symbol"]] * stock["sum"]|round(2, 'floor') }}</td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <td>CASH</td>
+                <td>~</td>
+                <td>~</td>
+                <td>${{ userCash }}</td>
+            </tr>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><b>${{ total }}</b></td>
+            </tr>
+        </tfoot>
+        </tbody>
+    </table>
+{% endblock %}
