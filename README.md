@@ -1,5 +1,5 @@
 # CS50x 2020
-My solution to all problem sets for <a target="_blank" href="https://cs50.harvard.edu/x/2020/">CS50x 2020</a>.
+My solutions to sets of problems for <a target="_blank" href="https://cs50.harvard.edu/x/2020/">CS50x 2020</a>.
 
 ## Academic Honesty
 > The essence of all work that you submit to this course must be your own.
