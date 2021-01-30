@@ -7,10 +7,14 @@
 {% block main %}
     <form action="/login" method="post">
         <div class="form-group">
-            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+            <label>
+                <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+            </label>
         </div>
         <div class="form-group">
-            <input class="form-control" name="password" placeholder="Password" type="password">
+            <label>
+                <input class="form-control" name="password" placeholder="Password" type="password">
+            </label>
         </div>
         <button class="btn btn-primary" type="submit">Log In</button>
     </form>

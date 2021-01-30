@@ -7,7 +7,9 @@
 {% block main %}
     <form action="/quote" method="post">
         <div class="form-group">
-            <input autofocus class="form-control" name="symbol" placeholder="Stock's symbol" type="text">
+            <label>
+                <input autofocus class="form-control" name="symbol" placeholder="Stock's symbol" type="text">
+            </label>
         </div>
         <button class="btn btn-primary" type="submit">Quote</button>
     </form>
